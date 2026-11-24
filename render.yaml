@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: gana-desde-tu-telefono
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./public
