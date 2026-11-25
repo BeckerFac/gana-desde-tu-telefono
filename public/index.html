@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Genera entre 15 y 100 USD al mes desde tu teléfono</title>
-<meta name="description" content="Envía 4 o 5 mensajes al día que ya te damos listos. Sin experiencia y a tu ritmo. Únete gratis al grupo de WhatsApp.">
-<meta property="og:title" content="Genera entre 15 y 100 USD al mes desde tu teléfono">
-<meta property="og:description" content="4 o 5 mensajes al día, ya escritos. Sin experiencia. Únete gratis al grupo.">
+<title>Genera entre 15 y 100 USD al mes con 1 hora al día</title>
+<meta name="description" content="Desde tu teléfono y con mensajes que ya te damos listos. Sin experiencia: solo 1 hora al día, con responsabilidad y constancia. Únete gratis al grupo de WhatsApp.">
+<meta property="og:title" content="Genera entre 15 y 100 USD al mes con 1 hora al día">
+<meta property="og:description" content="Desde tu teléfono, sin experiencia. Solo 1 hora al día con responsabilidad y constancia. Únete gratis al grupo.">
 <meta property="og:type" content="website">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -56,6 +56,7 @@ body{font-family:"Bricolage Grotesque",system-ui,sans-serif;color:var(--tinta);b
 .lugar svg{width:15px;height:15px;fill:none;stroke:var(--amarillo);stroke-width:2.4}
 h1{margin-top:12px;font-weight:800;font-size:clamp(40px, 11vw, 76px);line-height:.98;letter-spacing:-0.025em;text-wrap:balance}
 .monto{display:inline-block;background:var(--rojo);color:#fff;padding:.02em .16em .06em;border-radius:.14em;transform:rotate(-2deg);white-space:nowrap}
+.hora{color:var(--amarillo)}
 .sub{margin-top:18px;font-size:clamp(18px, 4.8vw, 22px);line-height:1.45;color:#dbe3ff;max-width:32ch}
 .sub b{color:#fff;font-weight:800}
 
@@ -137,6 +138,37 @@ h2{margin-top:8px;font-size:clamp(32px, 8.4vw, 54px);line-height:1.02;font-weigh
 .pasos p{margin-top:6px;font-size:16.5px;line-height:1.45;color:#39436a}
 .pasos-cta{margin-top:30px;max-width:460px}
 
+/* compromiso: 1 hora al dia, responsabilidad y constancia */
+.compromiso{background-color:var(--amarillo);background-image:var(--estrellitas)}
+.compromiso .kicker{color:var(--azul-osc)}
+.compromiso .intro{color:#27305c}
+.compromiso .intro b{color:var(--azul-osc)}
+.comp-grid{display:grid;gap:26px}
+.dia{background:#fff;border-radius:24px;padding:20px 18px 18px;box-shadow:0 2px 0 rgba(10,22,64,.08)}
+.dia-tit{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:15px;font-weight:800;color:var(--azul)}
+.dia-tit small{font-size:13px;font-weight:600;color:var(--gris)}
+.horas{display:grid;grid-template-columns:repeat(24,1fr);gap:3px;height:46px;margin-top:44px}
+.horas > i{background:#dfe5f4;border-radius:4px;position:relative}
+.horas > i.tuya{background:var(--rojo)}
+.etiqueta{position:absolute;bottom:calc(100% + 9px);left:50%;transform:translateX(-50%);white-space:nowrap;
+  background:var(--rojo);color:#fff;font-size:13px;font-weight:800;font-style:normal;padding:5px 10px;border-radius:999px}
+.etiqueta::after{content:"";position:absolute;left:50%;top:100%;margin-left:-6px;border:6px solid transparent;border-top-color:var(--rojo)}
+.marcas{display:flex;justify-content:space-between;margin-top:7px;font-size:12px;font-weight:600;color:var(--gris)}
+.leyenda{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:14px;font-size:14.5px;font-weight:600;color:#39436a}
+.leyenda span{display:inline-flex;align-items:center;gap:7px}
+.leyenda i{width:12px;height:12px;border-radius:3px;background:#dfe5f4}
+.leyenda i.r{background:var(--rojo)}
+.pide{list-style:none;display:grid;gap:12px;margin-top:12px}
+.pide li{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:20px;padding:18px;box-shadow:0 2px 0 rgba(10,22,64,.08)}
+.pide .ic{width:46px;height:46px;border-radius:14px;background:var(--azul);display:grid;place-items:center;flex:none}
+.pide .ic svg{width:25px;height:25px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.pide b{display:block;font-size:19px;color:var(--azul);line-height:1.2}
+.pide p{margin-top:4px;font-size:16px;line-height:1.45;color:#39436a}
+.racha{display:flex;gap:5px;margin-top:10px}
+.racha i{width:26px;height:26px;border-radius:50%;background:var(--wa);color:var(--wa-tinta);font-style:normal;font-size:12px;font-weight:800;display:grid;place-items:center}
+.comp-linea{font-size:18px;font-weight:600;color:var(--azul-osc)}
+.comp-accion .cta{max-width:460px}
+
 /* cuanto: foto de El Avila al atardecer */
 .cuanto{color:#fff;background:var(--azul-osc);overflow:hidden}
 .cuanto::before{content:"";position:absolute;inset:0;background:url(img/avila-1600.webp) center 60%/cover no-repeat;opacity:.5}
@@ -211,6 +243,11 @@ footer a{color:inherit}
   .tel{transform:rotate(2.5deg)}
   .pasos{grid-template-columns:repeat(4,1fr)}
   .pasos li{padding:84px 22px 26px}
+  .comp-grid{grid-template-columns:.85fr 1.15fr;grid-template-areas:"head vis" "accion vis";column-gap:56px;row-gap:0;align-items:start}
+  .comp-head{grid-area:head;align-self:end}
+  .comp-vis{grid-area:vis}
+  .comp-accion{grid-area:accion;margin-top:26px}
+  .pide{grid-template-columns:1fr 1fr}
   .escalera{grid-template-columns:repeat(3,1fr);align-items:end;gap:14px}
   .escalera .escalon:nth-child(n){width:auto}
   .escalon{border-radius:20px 20px 8px 8px;grid-template-columns:1fr;align-content:start;padding:20px}
@@ -245,8 +282,8 @@ footer a{color:inherit}
   <div class="cont hero-grid">
     <div>
       <span class="lugar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-6.1-6.5-11A6.5 6.5 0 0 1 18.5 10c0 4.9-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Desde Caracas, Maracaibo, Valencia o donde estés</span>
-      <h1>¡Genera entre <span class="monto">15 y 100 USD</span> al mes desde tu teléfono!</h1>
-      <p class="sub">Solo envías <b>4 o 5 mensajes al día</b> que ya te damos listos. Sin experiencia y a tu ritmo.</p>
+      <h1>¡Genera entre <span class="monto">15 y 100 USD</span> al mes con solo <span class="hora">1 hora al día</span>!</h1>
+      <p class="sub">Desde tu teléfono, con mensajes que ya te damos listos. No necesitas experiencia: solo <b>responsabilidad y constancia</b>.</p>
 
       <a class="cta" href="https://chat.whatsapp.com/C1FRFqTowrd1bjHnhnset9" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.06 24l1.68-6.16A11.9 11.9 0 010 11.93C0 5.35 5.35 0 11.93 0a11.86 11.86 0 018.44 3.5 11.82 11.82 0 013.49 8.44c0 6.58-5.35 11.93-11.93 11.93a11.9 11.9 0 01-5.7-1.45L.06 24zM6.6 20.2c1.63.97 3.19 1.55 5.25 1.55 5.46 0 9.91-4.44 9.91-9.9 0-5.47-4.45-9.91-9.91-9.91S1.95 6.38 1.95 11.85c0 2.17.64 3.79 1.7 5.48l-.99 3.63 3.94-.76zm11.28-5.6c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41z"/></svg>Unirme al grupo gratis</a>
       <div class="cta-nota">
@@ -277,7 +314,7 @@ footer a{color:inherit}
             </ul>
             <div class="toast" id="toast">
               <span class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
-              <span><b>¡Chévere! Listo por hoy</b><small>Cada persona que se activa te suma comisión</small></span>
+              <span><b>¡Chévere! Listo por hoy</b><small>Mañana repites y sigues sumando</small></span>
             </div>
           </div>
         </div>
@@ -291,7 +328,7 @@ footer a{color:inherit}
     <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16.5 9.5"/></svg><span><b>Gratis para empezar</b><small>No pagas nada para entrar</small></span></li>
     <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg><span><b>Desde tu teléfono</b><small>Solo necesitas WhatsApp</small></span></li>
     <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M4 12h10M4 17.5h7"/></svg><span><b>Sin experiencia</b><small>Te damos los mensajes listos</small></span></li>
-    <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span><b>A tu ritmo</b><small>Unos minutos al día</small></span></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span><b>1 hora al día</b><small>Con constancia, cada día</small></span></li>
   </ul>
 </div>
 
@@ -304,10 +341,48 @@ footer a{color:inherit}
       <ol class="pasos">
         <li class="rev"><h3>Únete al grupo</h3><p>Toca el botón verde y entra a nuestro grupo de WhatsApp. No cuesta nada.</p></li>
         <li class="rev"><h3>Recibe tus mensajes listos</h3><p>Cada día te pasamos a quién escribirle y el mensaje ya escrito. Copias, pegas y listo.</p></li>
-        <li class="rev"><h3>Envía 4 o 5 mensajes</h3><p>Desde tu teléfono, en unos minutos, a la hora que mejor te quede.</p></li>
-        <li class="rev"><h3>Cobra por tus resultados</h3><p>Cada persona que se activa con tu código te suma comisión. Mientras más le echas pichón, más generas.</p></li>
+        <li class="rev"><h3>Dedícale 1 hora al día</h3><p>Desde tu teléfono, a la hora que mejor te quede. Lo importante es no saltarte días.</p></li>
+        <li class="rev"><h3>Cobra por tus resultados</h3><p>Cada persona que se activa con tu código te suma comisión. Si le echas pichón todos los días, vas sumando más.</p></li>
       </ol>
       <a class="cta pasos-cta rev" href="https://chat.whatsapp.com/C1FRFqTowrd1bjHnhnset9" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.06 24l1.68-6.16A11.9 11.9 0 010 11.93C0 5.35 5.35 0 11.93 0a11.86 11.86 0 018.44 3.5 11.82 11.82 0 013.49 8.44c0 6.58-5.35 11.93-11.93 11.93a11.9 11.9 0 01-5.7-1.45L.06 24zM6.6 20.2c1.63.97 3.19 1.55 5.25 1.55 5.46 0 9.91-4.44 9.91-9.9 0-5.47-4.45-9.91-9.91-9.91S1.95 6.38 1.95 11.85c0 2.17.64 3.79 1.7 5.48l-.99 3.63 3.94-.76zm11.28-5.6c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41z"/></svg>¡Me anoto!</a>
+    </div>
+  </section>
+
+  <section class="bloque compromiso" id="compromiso">
+    <div class="cont comp-grid">
+      <div class="comp-head">
+        <span class="kicker rev">Lo que te pedimos</span>
+        <h2 class="rev">Solo 1 hora de tu día</h2>
+        <p class="intro rev">Es sencillo, pero no es magia: funciona si lo haces con <b>responsabilidad y constancia</b>.</p>
+      </div>
+
+      <div class="comp-vis">
+        <div class="dia rev" role="img" aria-label="Un día de 24 horas: 23 son para tu vida y 1 hora es para generar">
+          <div class="dia-tit"><span>Tu día</span><small>24 horas</small></div>
+          <div class="horas" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="tuya"><b class="etiqueta">Tu hora</b></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="marcas" aria-hidden="true"><span>0 h</span><span>6 h</span><span>12 h</span><span>18 h</span><span>24 h</span></div>
+          <div class="leyenda" aria-hidden="true"><span><i></i>23 horas para tu vida</span><span><i class="r"></i>1 hora para generar</span></div>
+        </div>
+        <ul class="pide">
+          <li class="rev">
+            <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.4-7 10-4-1.6-7-5.5-7-10V6l7-3z"/><path d="M8.8 12.2l2.2 2.2 4.3-4.6"/></svg></span>
+            <span><b>Responsabilidad</b><p>Cumples con tus mensajes de cada día, como un compromiso contigo.</p></span>
+          </li>
+          <li class="rev">
+            <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/></svg></span>
+            <span><b>Constancia</b><p>No te saltas días. Así es como se escala.</p>
+              <span class="racha" aria-hidden="true"><i>L</i><i>M</i><i>M</i><i>J</i><i>V</i><i>S</i><i>D</i></span></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="comp-accion">
+        <p class="comp-linea rev">¿Cuentas con eso? Lo demás te lo enseñamos en el grupo.</p>
+        <a class="cta rev" href="https://chat.whatsapp.com/C1FRFqTowrd1bjHnhnset9" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.06 24l1.68-6.16A11.9 11.9 0 010 11.93C0 5.35 5.35 0 11.93 0a11.86 11.86 0 018.44 3.5 11.82 11.82 0 013.49 8.44c0 6.58-5.35 11.93-11.93 11.93a11.9 11.9 0 01-5.7-1.45L.06 24zM6.6 20.2c1.63.97 3.19 1.55 5.25 1.55 5.46 0 9.91-4.44 9.91-9.9 0-5.47-4.45-9.91-9.91-9.91S1.95 6.38 1.95 11.85c0 2.17.64 3.79 1.7 5.48l-.99 3.63 3.94-.76zm11.28-5.6c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41z"/></svg>Sí, tengo 1 hora al día</a>
+      </div>
     </div>
   </section>
 
@@ -315,11 +390,11 @@ footer a{color:inherit}
     <div class="cont">
       <span class="kicker rev" style="color:var(--amarillo)">Tus ingresos</span>
       <h2 class="rev">¿Cuánto puedes generar?</h2>
-      <p class="intro rev">Arrancas con poco y, cuando le agarras el golpe, puedes escalar.</p>
+      <p class="intro rev">Arrancas con poco y, con constancia, escalas.</p>
       <div class="escalera rev">
-        <div class="escalon"><span class="n">Paso 1</span><b>Arrancas</b><span class="m">15 USD<small>al mes</small></span><small>Tus primeros mensajes</small></div>
-        <div class="escalon"><span class="n">Paso 2</span><b>Le agarras el golpe</b><small>Lo haces con más soltura</small></div>
-        <div class="escalon"><span class="n">Paso 3</span><b>Escalas</b><span class="m">100 USD<small>al mes</small></span><small>Más mensajes, más resultados</small></div>
+        <div class="escalon"><span class="n">Paso 1</span><b>Arrancas</b><span class="m">15 USD<small>al mes</small></span><small>Tu hora de cada día</small></div>
+        <div class="escalon"><span class="n">Paso 2</span><b>Le agarras el golpe</b><small>Tu hora ya es rutina</small></div>
+        <div class="escalon"><span class="n">Paso 3</span><b>Escalas</b><span class="m">100 USD<small>al mes</small></span><small>Más constancia, más resultados</small></div>
       </div>
       <p class="aviso rev">Montos de referencia. Lo que generas depende de tu actividad y tus resultados.</p>
     </div>
@@ -332,8 +407,10 @@ footer a{color:inherit}
       <div class="faq">
         <details class="rev"><summary>¿Tengo que pagar algo?</summary><p>No. Entrar al grupo y empezar es gratis.</p></details>
         <details class="rev"><summary>¿Necesito experiencia?</summary><p>No. Te damos los mensajes ya escritos y te explicamos todo en el grupo.</p></details>
-        <details class="rev"><summary>¿Cuánto tiempo me toma?</summary><p>Unos minutos al día. Son 4 o 5 mensajes y los mandas cuando quieras.</p></details>
+        <details class="rev"><summary>¿Cuánto tiempo me toma?</summary><p>1 hora al día, a la hora que mejor te quede. Lo que sí te pedimos es responsabilidad y constancia: hacerlo todos los días.</p></details>
+        <details class="rev"><summary>¿Por qué piden constancia?</summary><p>Porque los resultados se construyen día a día. Quien cumple su hora todos los días es quien llega a escalar.</p></details>
         <details class="rev"><summary>¿Desde dónde lo puedo hacer?</summary><p>Desde donde estés, en Venezuela o afuera. Solo necesitas tu teléfono con WhatsApp.</p></details>
+        <details class="rev"><summary>¿Y si después veo que no es para mí?</summary><p>Sales del grupo cuando quieras. Entrar y preguntar no te compromete a nada.</p></details>
       </div>
     </div>
   </section>
@@ -341,7 +418,7 @@ footer a{color:inherit}
   <section class="cierre" id="cierre">
     <div class="cont">
       <h2 class="rev">¿Te animas, pana?</h2>
-      <p class="rev">Entra al grupo y te explicamos todo para que empieces.</p>
+      <p class="rev">Si tienes 1 hora al día y ganas de ser constante, este es tu lugar. Entra al grupo y te explicamos todo.</p>
       <a class="cta rev" href="https://chat.whatsapp.com/C1FRFqTowrd1bjHnhnset9" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.06 24l1.68-6.16A11.9 11.9 0 010 11.93C0 5.35 5.35 0 11.93 0a11.86 11.86 0 018.44 3.5 11.82 11.82 0 013.49 8.44c0 6.58-5.35 11.93-11.93 11.93a11.9 11.9 0 01-5.7-1.45L.06 24zM6.6 20.2c1.63.97 3.19 1.55 5.25 1.55 5.46 0 9.91-4.44 9.91-9.9 0-5.47-4.45-9.91-9.91-9.91S1.95 6.38 1.95 11.85c0 2.17.64 3.79 1.7 5.48l-.99 3.63 3.94-.76zm11.28-5.6c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41z"/></svg>Unirme al grupo gratis</a>
     </div>
   </section>
